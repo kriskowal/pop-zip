@@ -65,6 +65,21 @@ Other collection objects are expected to implement `toArray`, and both zip and
 unzip will use these methods to funnel the resulting object array of arrays into
 the non-polymorphic unzip.
 
+## Alternatives
+
+The [array-zip] package is similar, but focuses on an implementation of `zip`
+alone, not based on unzip, but uses a straight-forward approach using functional
+idioms, but suffers from a V8 deoptimization (on passing arguments objects) and
+some garbage collector churn of throw-away closures.
+
+[array-zip]: https://github.com/frozzare/array-zip/blob/d21aed6b21de6aea880de526d5dd4e23dc1ebbe0/lib/array-zip.js
+
+The [transpose] package is similar, focusing on an implementation of `unzip`,
+but only works for strictly rectangular arrays of arrays.
+This implementation of `unzip` scans forward for the longest nested array in
+order to determine the length of the whole array, and builds the transpose in
+row major order instead of column major.
+
 ## License and Copyright
 
 Copyright (c) 2015 by Kristopher Michael Kowal and contributors.
