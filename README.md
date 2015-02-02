@@ -74,11 +74,13 @@ some garbage collector churn of throw-away closures.
 
 [array-zip]: https://github.com/frozzare/array-zip/blob/d21aed6b21de6aea880de526d5dd4e23dc1ebbe0/lib/array-zip.js
 
-The [transpose] package is similar, focusing on an implementation of `unzip`,
+The [transpose][] package is similar, focusing on an implementation of `unzip`,
 but only works for strictly rectangular arrays of arrays.
 This implementation of `unzip` scans forward for the longest nested array in
 order to determine the length of the whole array, and builds the transpose in
 row major order instead of column major.
+
+[transpose]: https://github.com/ttrfstud/transpose/blob/7b63bd6a894de59ac5fb93fc018ffbc32ba57abf/index.js
 
 ## License and Copyright
 
