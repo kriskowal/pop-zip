@@ -82,6 +82,13 @@ row major order instead of column major.
 
 [transpose]: https://github.com/ttrfstud/transpose/blob/7b63bd6a894de59ac5fb93fc018ffbc32ba57abf/index.js
 
+Most other alternatives bundle unzip into a larger collection of functions,
+chainable methods, or monkey patches on Array.
+This package is released in the spirit of small modules, coherent with
+other polymorphic operator packages.
+
+[pop]: https://github.com/search?utf8=%E2%9C%93&q=user%3Akriskowal+pop-&type=Repositories&ref=searchresults
+
 ## License and Copyright
 
 Copyright (c) 2015 by Kristopher Michael Kowal and contributors.
