@@ -1,6 +1,6 @@
 {
   "name": "pop-zip",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Zip and unzip, also called matrix transpose",
   "main": "pop-zip.js",
   "directories": {
