@@ -56,6 +56,11 @@ This package also exports polymorphic versions of zip and unzip, on the
 off-chance you may be working with an array or some more sophisticated
 collection.
 
+```js
+var zip = require("pop-zip");
+var unzip = require("pop-zip/pop-unzip";
+```
+
 Other collection objects are expected to implement `toArray`, and both zip and
 unzip will use these methods to funnel the resulting object array of arrays into
 the non-polymorphic unzip.
